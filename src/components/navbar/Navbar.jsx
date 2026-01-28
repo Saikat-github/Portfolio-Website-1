@@ -1,18 +1,15 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 
 const MENU_ITEMS = [
-  { label: "To The Top", href: "#tothetop" },
   { label: "About Me", href: "#about" },
   { label: "Portfolio", href: "#mywork" },
-  { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
-const HeaderNavbar = () => {
+const Navbar = () => {
   const [menu, setMenu] = useState("tothetop");
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -22,8 +19,8 @@ const HeaderNavbar = () => {
   }, []);
 
   return (
-    <div className='flex justify-between md:px-16 lg:px-28 px-6 py-4 md:items-center  sticky top-0 z-20 bg-black/80 backdrop-blur border-b border-b-gray-500'>
-      <Link to={"/"} className='font-semibold text-lg'>Saikat S.</Link>
+    <div className='flex justify-between md:px-16 lg:px-28 px-6 py-4 md:items-center  sticky top-0 z-20 bg-black/80 border-b border-b-white/20 backdrop-blur-md'>
+      <p to={"/"} className='font-semibold text-lg'>Saikat S.</p>
 
       {/* Menu open icon */}
       {!showSidebar ?
@@ -39,7 +36,7 @@ const HeaderNavbar = () => {
       >
         {/* Resume download */}
         <a href="/saikatsaha-resume.pdf" download className='md:hidden inline'>
-          <button className="bg-blue-950/70 text-blue-800 py-2 px-4   hover:opacity-90 rounded-full cursor-pointer text-sm transition duration-200">
+          <button className="bg-blue-800/30 text-blue-600 py-2 px-4   hover:opacity-90 rounded-full cursor-pointer text-sm transition duration-200">
             Resume
           </button>
         </a>
@@ -61,7 +58,7 @@ const HeaderNavbar = () => {
 
       {/* Resume download */}
       <a href="/saikatsaha-resume.pdf" download className='md:inline hidden'>
-        <button className="bg-blue-950/70 text-blue-800 py-2 px-4   hover:opacity-90 rounded-full cursor-pointer text-sm transition duration-200">
+        <button className="bg-blue-800/30 text-blue-600 py-2 px-4   hover:opacity-90 rounded-full cursor-pointer text-sm transition duration-200">
           Resume
         </button>
       </a>
@@ -69,4 +66,4 @@ const HeaderNavbar = () => {
   );
 };
 
-export default HeaderNavbar;
+export default Navbar;

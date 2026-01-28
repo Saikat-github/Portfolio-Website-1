@@ -1,5 +1,4 @@
-import HeaderNavbar from "./navbar/HeaderNavbar";
-import MainNavbar from "./navbar/MainNavbar";
+import Navbar from "./navbar/Navbar"
 import Hero from "./hero/Hero";
 import About from "./about/About";
 import MyWork2 from "./mywork/MyWork2";
@@ -9,5 +8,5 @@ import Footer from "./footer/Footer";
 
 
 export { Hero, About, MyWork2, Contact,
-    Footer, HeaderNavbar, MainNavbar
+    Footer, Navbar
 };

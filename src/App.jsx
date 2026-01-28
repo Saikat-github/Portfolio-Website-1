@@ -1,15 +1,13 @@
-import React from 'react'
-import { Footer} from './components'
-import { Outlet } from 'react-router-dom'
-import ScrollToTop from './components/ScrollToTop'
+import { Footer, Navbar } from './components'
+import Home from './pages/Home'
 
 
 const App = () => {
   return (
     <div className='font-Inter text-gray-200 bg-black'>
-      <ScrollToTop />
+      <Navbar />
       <main className='min-h-screen'>
-      <Outlet />
+        <Home/>
       </main>
       <Footer />
     </div>

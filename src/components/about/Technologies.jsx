@@ -13,7 +13,7 @@ import vscode from '../../assets/technologies/vscode.svg'
 
 const Technologies = () => {
   return (
-    <div className=' p-4 rounded-xl flex gap-6 flex-wrap justify-center'>
+    <div className=' p-4 sm:p-8 rounded flex gap-8 flex-wrap justify-center'>
         <img src={bootstrap} className='w-10' />
         <img src={css} className='w-10' />
         <img src={git} className='w-10' />

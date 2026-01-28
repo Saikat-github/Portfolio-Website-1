@@ -16,30 +16,30 @@ const MyWork2 = () => {
     return (
         <div className="mywork flex flex-col items-center py-20" id='mywork'>
             <h1 className='px-7 text-6xl font-semibold text-center my-10'>My Latest Work</h1>
-            <div className="mywork-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 md:gap-20 mx-6 md:mx-12 mt-4" >
+            <div className="mywork-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mx-6 md:mx-12 mt-4" >
                 {mywork_data.map((work, idx) => {
                     return <div
                         key={idx}
-                        className={"bg-slate-400/15 p-6 flex flex-col gap-6 rounded-xl justify-center items-center"}
+                        className={"bg-white/[0.07] shadow-xl shadow-white/10 border border-white/10  flex flex-col justify-center items-center p-4 gap-6 mt-6 rounded-xl"}
                     >
-                        <p className='text-lg font-bold'>{work.name}</p>
-                        <ul className='flex gap-2 flex-wrap'>
-                            {
-                                work.technologies.map((tech, idx) => {
-                                    return <p key={idx} className='py-1 px-4 bg-slate-300/15 text-xs rounded-full'>{tech}</p>
-                                })
-                            }
-                        </ul>
-                        <img src={work.img} alt="" className='w-96 transition duration-300 object-contain rounded-xl' />
-                        <p className='text-xs'>{work.info}</p>
-                        <hr />
+                            <p className='text-lg font-bold'>{work.name}</p>
+                            <ul className='flex gap-2 flex-wrap'>
+                                {
+                                    work.technologies.map((tech, idx) => {
+                                        return <p key={idx} className='py-1 px-4 bg-white/10 text-xs rounded-full'>{tech}</p>
+                                    })
+                                }
+                            </ul>
+                            <img src={work.img} alt="" className='w-96 transition duration-300 object-contain rounded-xl' />
+                            <p className='text-xs'>{work.info}</p>
+
                         {/* Buttons */}
-                        <div className="flex gap-4 text-sm">
+                        <div className="flex w-full justify-between mt-4 gap-4 text-sm">
                             <a
                                 href={work.liveLink || notDeployedUrl}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="text-blue-600 px-6 py-1 rounded-full flex items-center gap-1"
+                                className="text-blue-600 rounded-full flex items-center gap-1"
                             >
                                 See Live
                                 <ExternalLink className='w-4' />
@@ -48,7 +48,7 @@ const MyWork2 = () => {
                                 href={work.sourceCode || notDeployedUrl}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="text-blue-600 px-6 py-1 rounded-full flex items-center gap-1"
+                                className="text-blue-600 rounded-full flex items-center gap-1"
                             >
                                 Source code
                                 <ExternalLink className='w-4' />
@@ -61,7 +61,7 @@ const MyWork2 = () => {
                 href="https://github.com/Saikat-github/NotDeployed"
                 target="_blank"
                 rel="noreferrer"
-                className="flex gap-4 px-8 py-2 border border-slate-400/30 rounded-full my-20 hover:gap-8 cursor-pointer text-xs transition-all duration-300"
+                className="flex gap-4 px-8 py-2 border border-white/20 rounded-full my-20 hover:gap-8 cursor-pointer text-xs transition-all duration-300"
             >
                 <p >{showmore ? "Show Less" : "Show More"}</p>
                 <img src={arrow_icon} className='w-6' />
