@@ -61,13 +61,12 @@ const mywork_data = [
     {
         no: 6,
         name: "Spotify Web Player",
-        technologies: ["HTML", "CSS", "JS"],
+        technologies: ["HTML", "CSS"],
         img: project8_img,
         info: "A basic clone of Spotify’s UI showcasing playlist structure and music layout.",
-        sourceCode: "",
-        liveLink: ""
+        sourceCode: "https://github.com/Saikat-github/All-Practice-Projects/tree/main/Spotify%20Clone(A)",
+        liveLink: "https://music-app-saikat.vercel.app"
     },
-    ,
     // {
     //     no: 7,
     //     name: "Netflix Clone",

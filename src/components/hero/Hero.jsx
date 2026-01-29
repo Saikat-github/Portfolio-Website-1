@@ -33,7 +33,7 @@ const socialLinks = [
 
 const Hero = () => {
   return (
-    <div className='hero flex items-center flex-col gap-12 pb-20 pt-10 px-10 bg-gradient-to-b from-white/0 to-white/10' id='tothetop'>
+    <div className='hero flex items-center flex-col gap-12 pb-20 pt-10 px-10 bg-gradient-to-b from-white/0 to-white/15' id='tothetop'>
       <img src={profile_img} className='mt-4 w-60 h-60 object-cover rounded-full' />
       <h1 className='sm:w-2/3 text-4xl text-center  font-semibold'>
         Saikat Saha <br />
