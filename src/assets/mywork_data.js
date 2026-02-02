@@ -19,8 +19,8 @@ const mywork_data = [
         technologies: ["ReactJS", "TailwindCSS", "Firebase"],
         img: project3_img,
         info: "A modern gym management platform with online admission, payments, member verification, and separate admin/user dashboards.",
-        sourceCode: "https://github.com/Saikat-github/gymwebsite-1-frontend",
-        liveLink: "https://gymwebsite-1-frontend.vercel.app"
+        sourceCode: "https://github.com/Saikat-github/Gym-2-Frontend-MERN",
+        liveLink: "https://gymwebsite-2-frontend-mern.vercel.app"
     },
     {
         no: 2,

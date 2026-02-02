@@ -59,7 +59,7 @@ const MyWork2 = () => {
                     href="https://github.com/Saikat-github/All-Practice-Projects"
                     target="_blank"
                     rel="noreferrer"
-                    className='text-indigo-500'
+                    className='text-blue-600'
                 >Github</a>
             </p>
         </div >
