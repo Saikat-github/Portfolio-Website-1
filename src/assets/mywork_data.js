@@ -16,7 +16,7 @@ const mywork_data = [
     {
         no: 1,
         name: "Minimalist Gyms",
-        technologies: ["ReactJS", "TailwindCSS", "Firebase"],
+        technologies: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "TailwindCSS"],
         img: project3_img,
         info: "A modern gym management platform with online admission, payments, member verification, and separate admin/user dashboards.",
         sourceCode: "https://github.com/Saikat-github/Gym-2-Frontend-MERN",
