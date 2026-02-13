@@ -20,7 +20,7 @@ const mywork_data = [
         img: project3_img,
         info: "A modern gym management platform with online admission, payments, member verification, and separate admin/user dashboards.",
         sourceCode: "https://github.com/Saikat-github/Gym-2-Frontend-MERN",
-        liveLink: "https://gymwebsite-2-frontend-mern.vercel.app"
+        liveLink: "https://www.minimalistgyms.com"
     },
     {
         no: 2,
